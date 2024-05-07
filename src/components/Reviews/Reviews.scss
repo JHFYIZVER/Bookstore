@@ -1,0 +1,31 @@
+.rewiews-item {
+  background: #fff;
+
+  border-radius: 23.4794px;
+  padding: 30px;
+  max-width: 700px;
+  width: 100%;
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 2vw, 24px);
+    line-height: 22px;
+
+    color: #141416;
+  }
+
+  p {
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(12px, 2vw, 16px);
+    line-height: 22px;
+    color: #000000;
+  }
+
+  .mark{
+   margin-left: auto;
+  }
+}

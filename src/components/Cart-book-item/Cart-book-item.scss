@@ -1,0 +1,253 @@
+.section-about-book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .section-img-book {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .background-img-book {
+      position: relative;
+
+      width: 100%;
+      max-height: 560px;
+      height: 100%;
+
+      img {
+        position: relative;
+        z-index: 2;
+        border-radius: 23.9729px;
+        min-width: 156px;
+        max-width: 390px;
+        max-height: 560px;
+        width: 100%;
+
+        &:nth-child(2) {
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          filter: blur(24px);
+          border-radius: 23.9729px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  .section-info-book {
+    max-height: 560px;
+    height: auto;
+    flex: 0 0 50%;
+
+    .name-book {
+      max-width: 500px;
+      width: 100%;
+      margin-right: auto;
+
+      h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: clamp(18px, 6.5vw, 48px);
+        line-height: 43px;
+        color: #292b39;
+      }
+
+      h2 {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(13px, 3.5vw, 20px);
+        line-height: 29px;
+        color: rgba(136, 136, 136, 0.7);
+      }
+    }
+
+    .autor-book-info {
+      span {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(8px, 3.5vw, 18px);
+        line-height: 27px;
+        color: #8d8d8d;
+      }
+
+      h3 {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(13px, 3.5vw, 25px);
+        line-height: 39px;
+        color: #000;
+      }
+    }
+
+    .price-book-info {
+      span {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.6813px;
+        line-height: 27px;
+        color: #8d8d8d;
+      }
+
+      h2 {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(20px, 3.5vw, 32px);
+        line-height: 49px;
+        color: #292b39;
+      }
+    }
+
+    .mark-book-info {
+      span {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.6813px;
+        line-height: 27px;
+        color: #8d8d8d;
+      }
+
+      h2 {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19.2347px;
+        line-height: 30px;
+        color: #000;
+      }
+    }
+  }
+  .buy-book-btn {
+    background: #141416;
+    color: #fff;
+    border-radius: 19.6212px;
+    padding: 24px 0;
+    max-width: 500px;
+    width: 100%;
+    font-weight: bold;
+  }
+}
+
+.section-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(28px, 6.5vw, 40px);
+  line-height: 43px;
+  margin-bottom: 60px;
+  color: #292b39;
+}
+
+.detailed-information {
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  gap: 17px;
+  margin-bottom: auto;
+
+  background: #fafafa;
+  box-shadow: 17.561px 17.561px 61.0568px rgba(0, 0, 0, 0.12);
+  border-radius: 24.4227px;
+}
+
+.bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.popup {
+  background-color: #fff;
+  max-width: 1160px;
+  width: 100%;
+  max-height: 468px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+  position: relative;
+  border-radius: 3px;
+
+  .popup-title {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(24px, 6.5vw, 36px);
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #d37423;
+    max-width: 470px;
+  }
+
+  button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .reviews-book-container {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .carousel {
+    order: 2;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-about-book {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-about-book {
+    min-height: 950px;
+    justify-content: flex-start !important;
+    .section-info-book {
+      .autor-book-info {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .section-about-book {
+    justify-content: flex-start;
+    min-height: 1050px;
+    .section-info-book {
+      .autor-book-info {
+        img {
+          max-width: 33px;
+        }
+      }
+    }
+  }
+}

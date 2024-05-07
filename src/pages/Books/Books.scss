@@ -1,0 +1,24 @@
+.main-wrapper {
+  max-width: 1440px;
+  padding: 0 50px;
+  width: 100%;
+
+  nav {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(24px, 4vw, 32px);
+    line-height: 28px;
+    color: #23262f;
+  }
+
+  .section-about-book {
+    display: flex;
+    justify-content: space-between;
+
+    background: #fafafa;
+    box-shadow: 17.561px 17.561px 61.0568px rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
+    padding: 40px;
+  }
+}

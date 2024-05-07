@@ -1,0 +1,91 @@
+.books-catalog {
+  padding: 0 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  nav {
+    margin-right: auto;
+    font-size: clamp(13px, 3.5vw, 32px);
+  }
+
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 22px;
+    margin: 70px 0;
+
+    .all {
+      background: #98715e;
+      border-radius: 13.2619px;
+      color: #fff;
+      padding: 16px 21px;
+      height: 59px;
+
+      font-family: "Manrope", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15.4722px;
+      line-height: 150%;
+      letter-spacing: 0.221032px;
+    }
+
+    .genre-filter {
+      border: 2.21032px solid #141416;
+      border-radius: 13.2619px;
+      padding: 16px 30px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 8px;
+
+      font-family: "Manrope", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15.4722px;
+      line-height: 150%;
+      letter-spacing: 0.221032px;
+      color: #1a202c;
+    }
+    ul {
+      max-width: 180px;
+      width: 100%;
+      background-color: #fff;
+      padding: 15px;
+      border: 2.21032px solid #141416;
+      border-radius: 13.2619px;
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+
+      li {
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15.4722px;
+        line-height: 150%;
+        letter-spacing: 0.221032px;
+        color: #1a202c;
+        cursor: pointer;
+
+         &:hover {
+            color: #98715e;
+         }
+      }
+    }
+  }
+
+  .section-books-catalog {
+    margin-bottom: 100px;
+
+    h1 {
+      color: #141416;
+      line-height: 120%;
+      font-family: "Poppins", sans-serif;
+
+      font-size: clamp(30px, 5vw, 60px);
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.not-found-continer {
+  main {
+    margin: 75px 0;
+    .contaner-error {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      max-width: 1100px;
+      width: 100%;
+      background-color: #f0ebe4;
+      padding: 40px;
+      border-radius: 30px;
+    }
+  }
+}
+
+.go-to-main {
+  background-color: #5b5e68;
+  color: #fff;
+  border-radius: 12.4115px;
+  padding: 10px 20px;
+  transition: all 0.3s linear;
+  font-size: clamp(12px, 3vw, 16px);
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s linear;
+  }
+}
+
+@media (max-width: 1020px) {
+  .not-found-continer {
+    height: 100%;
+
+    main {
+      .contaner-error {
+        padding: 20px;
+
+        h1 {
+          font-size: 30px;
+        }
+
+        p:first-child {
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
