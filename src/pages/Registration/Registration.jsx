@@ -37,7 +37,7 @@ const Registration = () => {
 
   const addUser = (event) => {
     axios
-      .post("http://localhost:3000/users", userData)
+      .post("https://db-server-self.vercel.app/users", userData)
       .then((res) => {
         setUser((prevState) => ({ ...prevState, ...userData }));
       })

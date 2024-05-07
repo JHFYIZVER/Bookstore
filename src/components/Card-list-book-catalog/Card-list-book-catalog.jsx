@@ -9,7 +9,7 @@ const CardListBookCatalog = ({ genreFilter }) => {
 
   useEffect(() => {
    axios
-     .get("http://localhost:3000/books")
+     .get("https://db-server-self.vercel.app/books")
      .then((res) => {
        const filteredProducts = genreFilter && genreFilter !== 'Жанр'
          ? res.data.filter(product => product.genre === genreFilter) 

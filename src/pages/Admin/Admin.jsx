@@ -11,7 +11,7 @@ const Admin = () => {
   
 
   const addBook = () => {
-    axios.post("http://localhost:3000/books", data).then((res) => {});
+    axios.post("https://db-server-self.vercel.app/books", data).then((res) => {});
   };
 
   return (
