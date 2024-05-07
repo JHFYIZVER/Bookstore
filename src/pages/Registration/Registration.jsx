@@ -67,13 +67,6 @@ const Registration = () => {
     }
   };
 
-  console.log(
-    nameDirty,
-    surnameDirty,
-    emailDirty,
-    passwordDirty,
-    passwordRepeatDirty
-  );
 
   return (
     <>
